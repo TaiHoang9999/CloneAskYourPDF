@@ -59,6 +59,18 @@
                         Start For Free
                         <img src="@/assets/images/startforfree_icon.svg" alt="">
                     </button>
+
+
+                    <div class ="dropdown-wrapper">
+                        <div class="dropdown-selected-option">
+
+                        </div>
+                        
+
+                        <div class="options-wrapper">
+                            <div class="option"></div>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </header>

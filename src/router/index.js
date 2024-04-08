@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/pages/HomeView.vue'
 import PricingView from '@/pages/Pricing.vue'
+import APIView from '@/pages/APIView.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/pricing',
     name: 'pricing',
     component: PricingView
+  },
+  {
+    path: '/api',
+    name: 'api',
+    component: APIView
   },
   {
     path: '/about',

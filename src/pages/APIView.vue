@@ -37,13 +37,12 @@
                     </h1>
 
                     <div class="pricing-slider">
-                        <div class="pricing-slider-bar"></div>
+                        <div class="pricing-slider-bar" @mouseup="test($event)" @mousedown="test($event)"></div>
 
                         <div class="pricing-slider-track"></div>
 
-                        <div class="pricing-slider-circle">
+                        <div class="pricing-slider-circle" :style="{ left: circleLeft }"></div>
 
-                        </div>
                     </div>
 
                     <div class="pricing-item-description">
@@ -103,9 +102,13 @@ import Footer from "@/components/layouts/Footer.vue";
 import Hero from "@/components/layouts/Hero.vue";
 import { ref } from 'vue';
 
-const price = ref(1);
+const price = ref(19.99);
+const circleLeft = ref ('0%');
 
-
+const test = (e) =>{
+    let a = (e.offsetX / e.target.offsetWidth) * 100;
+    circleLeft.value=a + '%';
+}
 
 </script>
 

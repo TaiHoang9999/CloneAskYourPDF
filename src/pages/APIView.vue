@@ -77,7 +77,7 @@
         </div>
     </section>
 
-
+    <OurProduct />
     <Footer />
 </template>
 
@@ -100,6 +100,8 @@ export default {
 import Header from "@/components/layouts/Header.vue";
 import Footer from "@/components/layouts/Footer.vue";
 import Hero from "@/components/layouts/Hero.vue";
+import OurProduct from '@/components/layouts/OurProduct.vue';
+
 import { ref } from 'vue';
 
 const price = ref(19.99);

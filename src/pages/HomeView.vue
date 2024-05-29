@@ -75,7 +75,7 @@
                                 Business & Corporate
                             </li>
 
-                            <li class="industry-item">
+                            <li class="industry-item animation-btn">
                                 <img
                                     src="@/assets/images/icon_left.png"
                                     alt="icon_left_1.png"
@@ -543,6 +543,26 @@ line-height: (24 /16)
 .education-right
 {
     margin:0 auto;
+}
+/* animation btn */
+.animation-btn
+{
+    animation: btn-animation 1s;
+}
+@keyframes btn-animation
+{
+    0%
+    {
+        width: 0;
+        left: 50%;
+        top: 50%;
+    }
+    100%
+    {
+        width: 300px;
+        left: 0;
+        top: 0;
+    }
 }
 </style>
 
